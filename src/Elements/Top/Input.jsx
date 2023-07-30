@@ -25,12 +25,15 @@ const Input = () => {
   };
 
   return (
-    <form className="flex mt-10 w-full relative" onSubmit={handleSubmit}>
+    <form
+      className="flex mt-10 w-full relative md:flex-col gap-[20px]  md:text-sm"
+      onSubmit={handleSubmit}
+    >
       <input
         id="email"
         type="email"
         placeholder="Your Email Address..."
-        className="w-full border border-solid border-gray text-gray px-6 rounded-full mr-5"
+        className="w-full border border-solid border-gray text-gray px-6 rounded-full md:py-[12px]"
         name="email"
         value={formData}
         onChange={handleChange}
@@ -39,11 +42,11 @@ const Input = () => {
       <input
         type="submit"
         value="Notify Me"
-        className="bg-blue text-white font-semibold px-[60px] py-[18px] rounded-full cursor-pointer shadow-xl hover:opacity-80 transition-opacity ease-in-out duration-500"
+        className="bg-blue text-white font-semibold px-[60px] py-[18px] md:py-[12px] rounded-full cursor-pointer shadow-xl hover:opacity-80 transition-opacity ease-in-out duration-500"
       />
       <span
         id="error"
-        className="absolute left-8  opacity-0 transition-all text-light-red font-semibold italic"
+        className="absolute left-8 opacity-0 transition-all text-light-red font-semibold italic"
       >
         Incorrect Email
       </span>

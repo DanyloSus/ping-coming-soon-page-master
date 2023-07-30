@@ -12,6 +12,9 @@ export default {
         gray: "hsl(0, 0%, 59%)",
         "very-dark-blue": "hsl(209, 33%, 12%)",
       },
+      screens: {
+        md: { max: "768px" },
+      },
     },
   },
   plugins: [],
