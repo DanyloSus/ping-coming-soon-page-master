@@ -10,4 +10,24 @@
   svg {
     @apply cursor-pointer hover:bg-blue hover:fill-white transition-all ease-in-out duration-500 p-[8px] w-9 h-9 md:w-7 md:h-7 md:p-[5px] fill-blue rounded-full border border-solid border-pale-blue;
   }
+}
+.anim {
+  animation: anim 1s ease-in-out both;
+}
+
+.anim-soon {
+  animation: anim 1s ease-in-out 0.75s both;
+}
+
+@keyframes anim {
+  0% {
+    position: relative;
+    top: -20px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+  }
 }/*# sourceMappingURL=index.css.map */
